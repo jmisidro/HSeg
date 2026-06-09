@@ -2,7 +2,7 @@
 
 [![License: CC-BY-NC-ND 4.0](https://img.shields.io/badge/License-CC--BY--NC--ND%204.0-lightgrey.svg)](LICENSE)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
-[![LIAAD-INESCTEC](https://img.shields.io/badge/INESC%20TEC-LIAAD-red)](https://www.inesctec.pt/)
+[![LIAAD-INESCTEC](https://img.shields.io/badge/INESC%20TEC-NLP-blue)](https://nlp.inesctec.pt/)
 
 HSeg is a robust and flexible Large Language Model (LLM) based text segmentation framework designed to automatically partition unstructured documents into logically coherent, hierarchical sections. Utilizing **sentence-ID grounding**, HSeg constrains LLMs to reference actual sentence indices from the source text, eliminating hallucinations and ensuring high-precision boundary alignment.
 
