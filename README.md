@@ -47,32 +47,34 @@ graph TD
 
 ## Directory Structure
 
-All core framework components reside in the `src/hseg/` package:
+All core framework components reside in the `src/` directory:
 
 ```
-src/hseg/
-├── __init__.py                 # Exposes core classes & dataset loaders
+.
 ├── LICENSE                     # Creative Commons Attribution-NonCommercial-NoDerivatives 4.0
 ├── README.md                   # This documentation file
-├── utils/
-│   ├── __init__.py             # Exposes utility classes
-│   ├── preprocessing.py        # spaCy-based tokenizer with custom Portuguese rules
-│   ├── postprocessing.py       # SegmentationValidator with gap-filling & overlap merging
-│   ├── json_correction.py      # Self-correction logic for LLM JSON outputs
-│   └── evaluation.py           # Computes Boundary F1, Pk, WindowDiff, BED
-├── llm/
-│   ├── __init__.py             # Exposes LLM Interface
-│   └── llm_interface.py        # Unified LLM client (HuggingFace, Gemini, OpenAI, etc.)
-├── extractors/
-│   ├── __init__.py             # Exposes extractors
-│   ├── stage1_extractor.py     # Coarse/root section extractors (flat & recursive)
-│   └── stage2_extractor.py     # Fine-grained subject extractor using dynamic Pydantic schemas
-├── pipelines/
-│   ├── __init__.py             # Exposes pipelines
-│   └── pipeline.py             # Orchestrates LLMSegmentationPipeline & WikiLLMSegmentationPipeline
-└── data/
-    ├── __init__.py             # Exposes dataset loaders
-    └── data_loader.py          # Data loaders for CitiLink-Minutes and Wiki-727k datasets
+├── .gitattributes              # Git attributes configuration
+└── src/
+    ├── __init__.py                 # Exposes core classes & dataset loaders
+    ├── utils/
+    │   ├── __init__.py             # Exposes utility classes
+    │   ├── preprocessing.py        # spaCy-based tokenizer with custom Portuguese rules
+    │   ├── postprocessing.py       # SegmentationValidator with gap-filling & overlap merging
+    │   ├── json_correction.py      # Self-correction logic for LLM JSON outputs
+    │   └── evaluation.py           # Computes Boundary F1, Pk, WindowDiff, BED
+    ├── llm/
+    │   ├── __init__.py             # Exposes LLM Interface
+    │   └── llm_interface.py        # Unified LLM client (HuggingFace, Gemini, OpenAI, etc.)
+    ├── extractors/
+    │   ├── __init__.py             # Exposes extractors
+    │   ├── stage1_extractor.py     # Coarse/root section extractors (flat & recursive)
+    │   └── stage2_extractor.py     # Fine-grained subject extractor using dynamic Pydantic schemas
+    ├── pipelines/
+    │   ├── __init__.py             # Exposes pipelines
+    │   └── pipeline.py             # Orchestrates LLMSegmentationPipeline & WikiLLMSegmentationPipeline
+    └── data/
+        ├── __init__.py             # Exposes dataset loaders
+        └── data_loader.py          # Data loaders for CitiLink-Minutes and Wiki-727k datasets
 ```
 
 ---
