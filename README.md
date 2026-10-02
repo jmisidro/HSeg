@@ -176,21 +176,6 @@ HSeg was benchmarked and evaluated on the following datasets:
 
 ---
 
-## Citation
-
-If you use HSeg in your research or reference it in your work, please cite the dissertation:
-
-```bibtex
-@mastersthesis{isidrothesis2026,
-  author       = {José Miguel Isidro},
-  title        = {Text Segmentation of City Council Minutes in European Portuguese},
-  school       = {University of Porto},
-  year         = {2026}
-}
-```
-
----
-
 ## License
 
 This repository is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License. See the [LICENSE](LICENSE) file for details.
